@@ -1,0 +1,30 @@
+:root{
+  --bg:#ffffff;
+  --panel:#f8fafb;
+  --accent:#86efac;
+  --muted:#6b7280;
+}
+*{box-sizing:border-box}
+html,body,#root{height:100%;margin:0}
+body{font-family:Inter,Segoe UI,Arial,Helvetica,sans-serif;background:var(--bg);color:#111}
+.app-root{display:flex;flex-direction:column;height:100vh}
+.app-body{display:flex;flex:1;overflow:hidden;min-height:0}
+.canvas-area{flex:1;position:relative;min-height:0}
+/* fallback: ensure canvas has a concrete height so React Flow can measure it */
+.canvas-area{height:calc(100vh - 64px)}
+
+/* Banner styles fallback if any additional styling needed */
+.banner { padding: 8px 16px }
+.right-panel{width:320px;background:var(--panel);border-left:1px solid #eee;padding:12px;overflow:auto}
+.topbar{height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;border-bottom:1px solid #eee;background:#fafafa}
+.nodes-list{display:flex;flex-direction:column;gap:8px}
+.node-item{display:flex;align-items:center;padding:10px;border:1px dashed #d1d5db;background:#fff;border-radius:6px;cursor:grab}
+.node-item .label{margin-left:8px}
+.btn{padding:8px 12px;border-radius:6px;border:1px solid #cbd5e1;background:#fff;cursor:pointer}
+.btn-primary{background:#2563eb;color:#fff;border:none}
+.text-area{width:100%;min-height:120px}
+.node-card{background:#fff;border-radius:6px;box-shadow:0 6px 18px rgba(15,23,42,0.08);padding:8px}
+.settings-row{margin-bottom:12px}
+
+/* highlight for invalid nodes */
+.invalid-node { outline: 3px solid rgba(239,68,68,0.6); }
