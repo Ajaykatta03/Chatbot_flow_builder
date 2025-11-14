@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "start": "react-scripts start",
-    "postinstall": "chmod +x ./node_modules/.bin/react-scripts || true",
-    "build": "node node_modules/react-scripts/bin/react-scripts.js build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "echo 'No linter configured'"
   },
   "dependencies": {
     "bootstrap": "^5.3.8",
