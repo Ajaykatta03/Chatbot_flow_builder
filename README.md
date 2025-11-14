@@ -54,3 +54,6 @@ Output will be in the `build` folder.
 
 ---
 For questions or improvements, open an issue or contact the maintainer.
+## Live Demo
+
+Try the Flow Builder live on Vercel: https://chatbot-flow-builder-two-iota.vercel.app/
